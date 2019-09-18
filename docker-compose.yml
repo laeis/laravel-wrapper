@@ -29,6 +29,7 @@ services:
     environment:
       SERVICE_NAME: app
       SERVICE_TAGS: dev
+      XDEBUG_CONFIG: remote_host=host.docker.internal remote_port=9000 remote_enable=1
     working_dir: /var/www
     volumes:
       - ./src:/var/www
